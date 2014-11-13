@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "AppDelegate.h"
 #import "Reader.h"
+#import "FriendDetailViewController.h"
 
 @interface RootViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -65,9 +66,20 @@
 
 }
 
-- (IBAction)onAddButtonPressed:(UIBarButtonItem *)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([segue.identifier isEqualToString:@"segueToDetail"])
+    {
+        FriendDetailViewController *friendDetailVC = segue.destinationViewController;
+        friendDetailVC.moc = self.moc;
+
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Reader *selectedReaderFriend = self.readerWhoAreMyFriends[indexPath.row];
+
+        friendDetailVC.selectedReaderFriend = selectedReaderFriend;
+    }
 }
+
 
 
 
