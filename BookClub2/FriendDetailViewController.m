@@ -9,6 +9,7 @@
 #import "FriendDetailViewController.h"
 #import "Reader.h"
 #import "Book.h"
+#import "BookViewController.h"
 
 @interface FriendDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -74,6 +75,11 @@
 
     [alertcontroller addAction:okAction];
 
+    UIAlertAction *cancelButton = [UIAlertAction actionWithTitle:@"Cancel"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nil];
+    [alertcontroller addAction:cancelButton];
+
     [self presentViewController:alertcontroller animated:YES completion:^{
     }];
 }
@@ -104,6 +110,20 @@
 {
     self.booksArray = [self.selectedReaderFriend.books allObjects];
     [self.tableView reloadData];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"segueToBookDetail"])
+    {
+        BookViewController *bookVC = segue.destinationViewController;
+        bookVC.moc = self.moc;
+
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Book *selectedBook = self.booksArray[indexPath.row];
+
+        bookVC.selectedBook = selectedBook;
+    }
 }
 
 @end

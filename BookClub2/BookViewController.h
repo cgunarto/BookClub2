@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
+@class Book;
 
 @interface BookViewController : UIViewController
+@property NSManagedObjectContext *moc;
+@property Book *selectedBook;
 
 @end
