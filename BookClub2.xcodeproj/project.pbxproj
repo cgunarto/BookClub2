@@ -10,11 +10,16 @@
 		4F99A3291A14389E00430DFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3281A14389E00430DFF /* main.m */; };
 		4F99A32C1A14389E00430DFF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A32B1A14389E00430DFF /* AppDelegate.m */; };
 		4F99A32F1A14389E00430DFF /* BookClub2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A32D1A14389E00430DFF /* BookClub2.xcdatamodeld */; };
-		4F99A3321A14389E00430DFF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3311A14389E00430DFF /* ViewController.m */; };
+		4F99A3321A14389E00430DFF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3311A14389E00430DFF /* RootViewController.m */; };
 		4F99A3351A14389E00430DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F99A3331A14389E00430DFF /* Main.storyboard */; };
 		4F99A3371A14389E00430DFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F99A3361A14389E00430DFF /* Images.xcassets */; };
 		4F99A33A1A14389E00430DFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4F99A3381A14389E00430DFF /* LaunchScreen.xib */; };
 		4F99A3461A14389E00430DFF /* BookClub2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3451A14389E00430DFF /* BookClub2Tests.m */; };
+		4F99A3511A14397300430DFF /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3501A14397300430DFF /* Comment.m */; };
+		4F99A3541A14397300430DFF /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3531A14397300430DFF /* Book.m */; };
+		4F99A35A1A14399A00430DFF /* friends.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F99A3591A14399A00430DFF /* friends.json */; };
+		4F99A3601A14597900430DFF /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A35F1A14597900430DFF /* Reader.m */; };
+		4F99A3631A146B1A00430DFF /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +39,23 @@
 		4F99A32A1A14389E00430DFF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4F99A32B1A14389E00430DFF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4F99A32E1A14389E00430DFF /* BookClub2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookClub2.xcdatamodel; sourceTree = "<group>"; };
-		4F99A3301A14389E00430DFF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4F99A3311A14389E00430DFF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4F99A3301A14389E00430DFF /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		4F99A3311A14389E00430DFF /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		4F99A3341A14389E00430DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F99A3361A14389E00430DFF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4F99A3391A14389E00430DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4F99A33F1A14389E00430DFF /* BookClub2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookClub2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F99A3441A14389E00430DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F99A3451A14389E00430DFF /* BookClub2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookClub2Tests.m; sourceTree = "<group>"; };
+		4F99A34F1A14397300430DFF /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		4F99A3501A14397300430DFF /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		4F99A3521A14397300430DFF /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		4F99A3531A14397300430DFF /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		4F99A3591A14399A00430DFF /* friends.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friends.json; sourceTree = "<group>"; };
+		4F99A35E1A14597900430DFF /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reader.h; path = ../Reader.h; sourceTree = "<group>"; };
+		4F99A35F1A14597900430DFF /* Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reader.m; path = ../Reader.m; sourceTree = "<group>"; };
+		4F99A3611A146B1A00430DFF /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
+		4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +99,15 @@
 			children = (
 				4F99A32A1A14389E00430DFF /* AppDelegate.h */,
 				4F99A32B1A14389E00430DFF /* AppDelegate.m */,
-				4F99A3301A14389E00430DFF /* ViewController.h */,
-				4F99A3311A14389E00430DFF /* ViewController.m */,
+				4F99A3301A14389E00430DFF /* RootViewController.h */,
+				4F99A3311A14389E00430DFF /* RootViewController.m */,
+				4F99A3611A146B1A00430DFF /* AddFriendsViewController.h */,
+				4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */,
 				4F99A3331A14389E00430DFF /* Main.storyboard */,
 				4F99A3361A14389E00430DFF /* Images.xcassets */,
 				4F99A3381A14389E00430DFF /* LaunchScreen.xib */,
 				4F99A32D1A14389E00430DFF /* BookClub2.xcdatamodeld */,
+				4F99A3581A14397800430DFF /* MODEL */,
 				4F99A3261A14389E00430DFF /* Supporting Files */,
 			);
 			path = BookClub2;
@@ -99,6 +116,7 @@
 		4F99A3261A14389E00430DFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4F99A3591A14399A00430DFF /* friends.json */,
 				4F99A3271A14389E00430DFF /* Info.plist */,
 				4F99A3281A14389E00430DFF /* main.m */,
 			);
@@ -120,6 +138,19 @@
 				4F99A3441A14389E00430DFF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F99A3581A14397800430DFF /* MODEL */ = {
+			isa = PBXGroup;
+			children = (
+				4F99A35E1A14597900430DFF /* Reader.h */,
+				4F99A35F1A14597900430DFF /* Reader.m */,
+				4F99A3521A14397300430DFF /* Book.h */,
+				4F99A3531A14397300430DFF /* Book.m */,
+				4F99A34F1A14397300430DFF /* Comment.h */,
+				4F99A3501A14397300430DFF /* Comment.m */,
+			);
+			name = MODEL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +236,7 @@
 				4F99A3351A14389E00430DFF /* Main.storyboard in Resources */,
 				4F99A33A1A14389E00430DFF /* LaunchScreen.xib in Resources */,
 				4F99A3371A14389E00430DFF /* Images.xcassets in Resources */,
+				4F99A35A1A14399A00430DFF /* friends.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,9 +254,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F99A3631A146B1A00430DFF /* AddFriendsViewController.m in Sources */,
 				4F99A32C1A14389E00430DFF /* AppDelegate.m in Sources */,
 				4F99A3291A14389E00430DFF /* main.m in Sources */,
-				4F99A3321A14389E00430DFF /* ViewController.m in Sources */,
+				4F99A3321A14389E00430DFF /* RootViewController.m in Sources */,
+				4F99A3511A14397300430DFF /* Comment.m in Sources */,
+				4F99A3601A14597900430DFF /* Reader.m in Sources */,
+				4F99A3541A14397300430DFF /* Book.m in Sources */,
 				4F99A32F1A14389E00430DFF /* BookClub2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
