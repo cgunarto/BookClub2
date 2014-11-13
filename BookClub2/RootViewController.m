@@ -11,7 +11,7 @@
 #import "Reader.h"
 #import "FriendDetailViewController.h"
 
-@interface RootViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface RootViewController () <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate>
 
 @property NSArray *readerWhoAreMyFriends;
 @property NSManagedObjectContext *moc;
@@ -111,6 +111,17 @@
     }
 }
 
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([Reader class])];
+    NSSortDescriptor *sortByName = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    request.sortDescriptors = @[sortByName];
+
+    request.predicate = [NSPredicate predicateWithFormat:@"(isFriend == 'yes') AND (name CONTAINS[cd] %@)", searchText];
+    self.readerWhoAreMyFriends = [[self.moc executeFetchRequest:request error:nil]mutableCopy];
+    [self.tableView reloadData];
+
+}
 
 
 
