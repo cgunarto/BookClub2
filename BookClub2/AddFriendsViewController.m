@@ -76,6 +76,9 @@
     //if coredata doesn't have readers in it
     NSError *error;
     NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Reader"];
+    NSSortDescriptor *sortByName = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    request.sortDescriptors = @[sortByName];
+    
     self.readersListArray = [[self.moc executeFetchRequest:request error:&error]mutableCopy];
 
     //if readersListArray is empty, populate it with Reader objects and save it to core data
