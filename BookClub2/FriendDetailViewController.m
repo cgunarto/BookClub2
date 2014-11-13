@@ -23,6 +23,7 @@
 
 @implementation FriendDetailViewController
 
+#pragma mark View Controller Life Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -36,6 +37,14 @@
     [self loadBooks];
 }
 
+#pragma mark Load Books
+- (void)loadBooks
+{
+    self.booksArray = [self.selectedReaderFriend.books allObjects];
+    [self.tableView reloadData];
+}
+
+#pragma mark Adding Book 
 - (IBAction)onAddButtonTapped:(UIBarButtonItem *)sender
 {
     UIAlertController *alertcontroller = [UIAlertController alertControllerWithTitle:@"Add a book" message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -104,12 +113,6 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     return @"Suggested books";
-}
-
-- (void)loadBooks
-{
-    self.booksArray = [self.selectedReaderFriend.books allObjects];
-    [self.tableView reloadData];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

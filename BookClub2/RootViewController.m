@@ -22,12 +22,14 @@
 
 @implementation RootViewController
 
+#pragma mark View Controller Life Cycle
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"WELCOME TO BOOK CLUB"
-                                                                   message:@"First rule: You do not talk about book club!"
+                                                                   message:@"First rule: DO NOT talk about book club!"
                                                             preferredStyle:UIAlertControllerStyleAlert];
 
     UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK"
@@ -52,6 +54,8 @@
 }
 
 
+#pragma mark Table View Delegate Method
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.readerWhoAreMyFriends.count;
@@ -71,6 +75,8 @@
 
     return cell;
 }
+
+#pragma mark Loading and Sorting Friends
 
 - (void)loadFriendsandReloadTableView
 {
@@ -97,6 +103,8 @@
     [self.tableView reloadData];
 }
 
+#pragma mark Segue
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"segueToDetail"])
@@ -110,6 +118,9 @@
         friendDetailVC.selectedReaderFriend = selectedReaderFriend;
     }
 }
+
+
+#pragma mark Search Bar
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
