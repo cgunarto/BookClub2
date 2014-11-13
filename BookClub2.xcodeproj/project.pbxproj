@@ -21,6 +21,7 @@
 		4F99A3601A14597900430DFF /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A35F1A14597900430DFF /* Reader.m */; };
 		4F99A3631A146B1A00430DFF /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */; };
 		4F99A3661A147AC500430DFF /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3651A147AC500430DFF /* FriendDetailViewController.m */; };
+		4F99A3691A1482C200430DFF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3681A1482C200430DFF /* BookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
 		4F99A3641A147AC500430DFF /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
 		4F99A3651A147AC500430DFF /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
+		4F99A3671A1482C200430DFF /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		4F99A3681A1482C200430DFF /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */,
 				4F99A3641A147AC500430DFF /* FriendDetailViewController.h */,
 				4F99A3651A147AC500430DFF /* FriendDetailViewController.m */,
+				4F99A3671A1482C200430DFF /* BookViewController.h */,
+				4F99A3681A1482C200430DFF /* BookViewController.m */,
 				4F99A3331A14389E00430DFF /* Main.storyboard */,
 				4F99A3361A14389E00430DFF /* Images.xcassets */,
 				4F99A3381A14389E00430DFF /* LaunchScreen.xib */,
@@ -264,6 +269,7 @@
 				4F99A3291A14389E00430DFF /* main.m in Sources */,
 				4F99A3321A14389E00430DFF /* RootViewController.m in Sources */,
 				4F99A3661A147AC500430DFF /* FriendDetailViewController.m in Sources */,
+				4F99A3691A1482C200430DFF /* BookViewController.m in Sources */,
 				4F99A3511A14397300430DFF /* Comment.m in Sources */,
 				4F99A3601A14597900430DFF /* Reader.m in Sources */,
 				4F99A3541A14397300430DFF /* Book.m in Sources */,

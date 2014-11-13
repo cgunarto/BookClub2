@@ -25,6 +25,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"WELCOME TO BOOK CLUB"
+                                                                   message:@"First rule: You do not talk about book club!"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *okButton = [UIAlertAction actionWithTitle:@"OK"
+                                                       style:UIAlertActionStyleDefault
+                                                     handler:nil];
+    [alert addAction:okButton];
+    [self presentViewController:alert
+                       animated:YES
+                     completion:nil];
+
+
     AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
     self.moc = delegate.managedObjectContext;
 }
