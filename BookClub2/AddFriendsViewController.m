@@ -103,14 +103,6 @@
 }
 
 
-//- (void)retrieveFriends
-//{
-//    NSError *error;
-//    NSFetchRequest *request = [[NSFetchRequest alloc]initWithEntityName:@"Reader"];
-//    request.predicate = [NSPredicate predicateWithFormat:@"isFriend == 'yes'"];
-//
-//    self.friendsArray = [[self.moc executeFetchRequest:request error:&error]mutableCopy];
-//}
 
 
 

@@ -69,12 +69,12 @@
 
                                    [self.moc save:nil];
                                    [self dismissViewControllerAnimated:YES completion: nil];
+                                   [self loadBooks];
                                }];
 
     [alertcontroller addAction:okAction];
 
     [self presentViewController:alertcontroller animated:YES completion:^{
-        nil;
     }];
 }
 
