@@ -15,6 +15,7 @@
 @dynamic name;
 @dynamic isFriend;
 @dynamic image;
+@dynamic numberOfRecommendedBooks;
 @dynamic books;
 
 @end

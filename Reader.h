@@ -16,6 +16,7 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * isFriend;
 @property (nonatomic, retain) NSData * image;
+@property (nonatomic, retain) NSNumber * numberOfRecommendedBooks;
 @property (nonatomic, retain) NSSet *books;
 @end
 

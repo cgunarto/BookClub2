@@ -63,6 +63,11 @@
 
     Reader *reader = self.readerWhoAreMyFriends[indexPath.row];
     cell.textLabel.text = reader.name;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)reader.books.count];
+
+    //set the number of recommended books
+    reader.numberOfRecommendedBooks = [NSNumber numberWithInteger:reader.books.count];
+    [self.moc save:nil];
 
     return cell;
 }
@@ -78,6 +83,18 @@
     self.readerWhoAreMyFriends = [[self.moc executeFetchRequest:request error:nil]mutableCopy];
     [self.tableView reloadData];
 
+}
+
+- (IBAction)onSortButtonPressed:(UIBarButtonItem *)sender
+{
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([Reader class])];
+    NSSortDescriptor *sortByBooks = [[NSSortDescriptor alloc] initWithKey:@"numberOfRecommendedBooks" ascending:NO selector:@selector(localizedStandardCompare:)];
+    request.sortDescriptors = @[sortByBooks];
+
+    request.predicate = [NSPredicate predicateWithFormat:@"isFriend == 'yes'"];
+
+    self.readerWhoAreMyFriends = [[self.moc executeFetchRequest:request error:nil]mutableCopy];
+    [self.tableView reloadData];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

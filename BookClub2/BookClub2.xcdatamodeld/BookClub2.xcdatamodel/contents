@@ -15,10 +15,11 @@
         <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="isFriend" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfRecommendedBooks" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Book" inverseName="readers" inverseEntity="Book" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Reader" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Reader" positionX="-63" positionY="-18" width="128" height="118"/>
         <element name="Comment" positionX="-54" positionY="18" width="128" height="73"/>
         <element name="Book" positionX="-36" positionY="27" width="128" height="118"/>
     </elements>

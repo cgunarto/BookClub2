@@ -18,10 +18,10 @@
 		4F99A3511A14397300430DFF /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3501A14397300430DFF /* Comment.m */; };
 		4F99A3541A14397300430DFF /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3531A14397300430DFF /* Book.m */; };
 		4F99A35A1A14399A00430DFF /* friends.json in Resources */ = {isa = PBXBuildFile; fileRef = 4F99A3591A14399A00430DFF /* friends.json */; };
-		4F99A3601A14597900430DFF /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A35F1A14597900430DFF /* Reader.m */; };
 		4F99A3631A146B1A00430DFF /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */; };
 		4F99A3661A147AC500430DFF /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3651A147AC500430DFF /* FriendDetailViewController.m */; };
 		4F99A3691A1482C200430DFF /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A3681A1482C200430DFF /* BookViewController.m */; };
+		4F99A36C1A149B2200430DFF /* Reader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F99A36B1A149B2200430DFF /* Reader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,14 +54,14 @@
 		4F99A3521A14397300430DFF /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		4F99A3531A14397300430DFF /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		4F99A3591A14399A00430DFF /* friends.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = friends.json; sourceTree = "<group>"; };
-		4F99A35E1A14597900430DFF /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reader.h; path = ../Reader.h; sourceTree = "<group>"; };
-		4F99A35F1A14597900430DFF /* Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reader.m; path = ../Reader.m; sourceTree = "<group>"; };
 		4F99A3611A146B1A00430DFF /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
 		4F99A3621A146B1A00430DFF /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
 		4F99A3641A147AC500430DFF /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
 		4F99A3651A147AC500430DFF /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
 		4F99A3671A1482C200430DFF /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
 		4F99A3681A1482C200430DFF /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		4F99A36A1A149B2200430DFF /* Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reader.h; path = ../Reader.h; sourceTree = "<group>"; };
+		4F99A36B1A149B2200430DFF /* Reader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reader.m; path = ../Reader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,8 +153,8 @@
 		4F99A3581A14397800430DFF /* MODEL */ = {
 			isa = PBXGroup;
 			children = (
-				4F99A35E1A14597900430DFF /* Reader.h */,
-				4F99A35F1A14597900430DFF /* Reader.m */,
+				4F99A36A1A149B2200430DFF /* Reader.h */,
+				4F99A36B1A149B2200430DFF /* Reader.m */,
 				4F99A3521A14397300430DFF /* Book.h */,
 				4F99A3531A14397300430DFF /* Book.m */,
 				4F99A34F1A14397300430DFF /* Comment.h */,
@@ -268,10 +268,10 @@
 				4F99A32C1A14389E00430DFF /* AppDelegate.m in Sources */,
 				4F99A3291A14389E00430DFF /* main.m in Sources */,
 				4F99A3321A14389E00430DFF /* RootViewController.m in Sources */,
+				4F99A36C1A149B2200430DFF /* Reader.m in Sources */,
 				4F99A3661A147AC500430DFF /* FriendDetailViewController.m in Sources */,
 				4F99A3691A1482C200430DFF /* BookViewController.m in Sources */,
 				4F99A3511A14397300430DFF /* Comment.m in Sources */,
-				4F99A3601A14597900430DFF /* Reader.m in Sources */,
 				4F99A3541A14397300430DFF /* Book.m in Sources */,
 				4F99A32F1A14389E00430DFF /* BookClub2.xcdatamodeld in Sources */,
 			);
