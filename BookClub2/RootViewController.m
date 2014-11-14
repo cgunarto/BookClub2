@@ -94,13 +94,18 @@
 - (IBAction)onSortButtonPressed:(UIBarButtonItem *)sender
 {
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:NSStringFromClass([Reader class])];
-    NSSortDescriptor *sortByBooks = [[NSSortDescriptor alloc] initWithKey:@"numberOfRecommendedBooks" ascending:NO selector:@selector(localizedStandardCompare:)];
-    request.sortDescriptors = @[sortByBooks];
+//    NSSortDescriptor *sortByBooks = [[NSSortDescriptor alloc] initWithKey:@"numberOfRecommendedBooks" ascending:NO selector:@selector(localizedStandardCompare:)];
+//    request.sortDescriptors = @[sortByBooks];
 
+    //fetch first
+    //run the sort result on the arra
     request.predicate = [NSPredicate predicateWithFormat:@"isFriend == 'yes'"];
+    NSMutableArray *arrayToSort = [[self.moc executeFetchRequest:request error:nil]mutableCopy];
 
-    self.readerWhoAreMyFriends = [[self.moc executeFetchRequest:request error:nil]mutableCopy];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"books.@count" ascending:NO];
+    self.readerWhoAreMyFriends = [arrayToSort sortedArrayUsingDescriptors:@[sortDescriptor]];
     [self.tableView reloadData];
+
 }
 
 #pragma mark Segue
